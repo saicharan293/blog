@@ -1,0 +1,40 @@
+<div class="author">
+    <h1 class="author__heading">Hi, I am Sai.</h1>
+    <p class="author__body">Web developer and prompt engineer.</p>
+</div>
+
+<img src="/img/hero-image.webp" alt="person looking out throug window" class="hero-image" width="981" height="528">
+
+<section class="articles">
+    <he class="articles__heading">Latest Posts</he>
+<<<<<<< HEAD
+    <ul class="article-ul">
+=======
+
+    <ul class="article-ul">
+
+>>>>>>> 5e247bde6b89c334e9d7cb0b9d7ed8358ca0a64b
+        <% data.forEach(post => { %>
+        <li>
+            <a href="/post/<%= post._id %>">
+                <span><%= post.title %></span>
+                <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
+            </a>
+        </li>
+<<<<<<< HEAD
+        <% }) %>
+        <% if (nextPage !== null) { %>
+            <a href="/?page=<%= nextPage %>" class="pagination">&lt; view Older posts</a>
+        <% } %>
+=======
+
+        <% }) %>
+
+        <% if (nextPage !== null) { %>
+            <a href="/?page=<%= nextPage %>" class="pagination">&lt; view Older posts</a>
+        <% } %>
+
+>>>>>>> 5e247bde6b89c334e9d7cb0b9d7ed8358ca0a64b
+    </ul>
+
+</section>
