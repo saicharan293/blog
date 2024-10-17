@@ -33,12 +33,8 @@ router.get('',async (req,res)=>{
             locals,
             data,
             current: page,
-<<<<<<< HEAD
             nextPage: hasNextPage ? nextPage : null,
             currentRoute : '/'
-=======
-            nextPage: hasNextPage ? nextPage : null
->>>>>>> 5e247bde6b89c334e9d7cb0b9d7ed8358ca0a64b
         });
 
     } catch (error) {
@@ -47,7 +43,6 @@ router.get('',async (req,res)=>{
 })
 
 
-<<<<<<< HEAD
 // GET post:id 
 router.get('/post/:id',async(req,res)=>{
     try {
@@ -82,27 +77,20 @@ router.post('/search',async(req,res)=>{
                 ]
             }
         );
-        // res.render('search',{locals,data});
-        res.render('search',{data,locals})
+        res.render('search',{data,locals,currentRoute:'/search'})
     } catch (error) {
         
     }
 })
 
 
-=======
->>>>>>> 5e247bde6b89c334e9d7cb0b9d7ed8358ca0a64b
 
 
 
 router.get('/about', (req,res) => {
-<<<<<<< HEAD
     res.render('about',{
         currentRoute : '/about'
     })
-=======
-    res.render('about')
->>>>>>> 5e247bde6b89c334e9d7cb0b9d7ed8358ca0a64b
 })
 
 module.exports=router;

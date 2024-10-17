@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // alert('hello');
 
 document.addEventListener('DOMContentLoaded',function(){
@@ -22,6 +21,3 @@ document.addEventListener('DOMContentLoaded',function(){
         // searchInput.focus();
     })
 })
-=======
-// alert('hello');
->>>>>>> 5e247bde6b89c334e9d7cb0b9d7ed8358ca0a64b

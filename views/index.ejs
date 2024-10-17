@@ -7,13 +7,9 @@
 
 <section class="articles">
     <he class="articles__heading">Latest Posts</he>
-<<<<<<< HEAD
-    <ul class="article-ul">
-=======
 
     <ul class="article-ul">
 
->>>>>>> 5e247bde6b89c334e9d7cb0b9d7ed8358ca0a64b
         <% data.forEach(post => { %>
         <li>
             <a href="/post/<%= post._id %>">
@@ -21,12 +17,6 @@
                 <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
             </a>
         </li>
-<<<<<<< HEAD
-        <% }) %>
-        <% if (nextPage !== null) { %>
-            <a href="/?page=<%= nextPage %>" class="pagination">&lt; view Older posts</a>
-        <% } %>
-=======
 
         <% }) %>
 
@@ -34,7 +24,6 @@
             <a href="/?page=<%= nextPage %>" class="pagination">&lt; view Older posts</a>
         <% } %>
 
->>>>>>> 5e247bde6b89c334e9d7cb0b9d7ed8358ca0a64b
     </ul>
 
 </section>
